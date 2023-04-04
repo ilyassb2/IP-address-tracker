@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+.top-div {
+  width: 100%;
+  background-image: url(images/pattern-bg-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+.app-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 30px 0 30px 0;
+}
+.search-bar-div form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 130px;
+}
+.search-bar {
+  min-width: 500px;
+  padding: 10px;
+  border: none;
+  flex-grow: 1;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.search-btn {
+  background-color: #000000;
+  padding: 13.5px;
+  margin-left: -1px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.data {
+  position: relative;
+  padding: 40px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin: 0 auto;
+  z-index: 1;
+  top: -80px;
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(0, 0%, 59%);
+}
+.data-result {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 12px;
+}
+.vl {
+  border-left: 1px solid gray;
+  height: 70px;
+  opacity: 0.3;
+}
+.bottom-div {
+  position: relative;
+  top: -155px;
+  z-index: 0;
+}
+
+#map {
+  height: 650px;
+}
